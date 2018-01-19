@@ -11,7 +11,7 @@ scanf("%d",&a[i]);
 }
 for(i=0;i<=5;i++)
 {
-if(n>a[i])
+if(a[i]>a[i++])
 printf("%d is max",n);
 else
 printf("not");
