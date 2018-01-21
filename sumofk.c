@@ -2,19 +2,17 @@
 add(int,int);
 int main()
 {
-int a1[10],a2[10];
-printf("The elements are");
-scanf("%d",&a1);
-printf("the elements are");
-scanf("%d",&a2);
-sum=add();
-}
-add(int a,int b)
-{
-int c;
-printf("the numbers are");
-scanf("%d",a2);
-c=a+b;
-printf("the sum is %d",c);
+int a[5],n,k,sum=0,i;
+	printf("Enter the numbers");
+	scanf("%d%d",&n,&k);
+	for(i=0;i<=n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<=k;i++)
+	{
+		sum=sum+a[i];
+	}
+	printf("sum=%d",sum);
 	return 0;
 }
