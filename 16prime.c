@@ -4,17 +4,20 @@ int main()
 int num,num1,i;
 printf("Enter the number");
 scanf("%d%d",&num,&num1);
-for(i=2;i<=num/2;i++)
+  for(i=num;i<=num1;i++)
+  {
+for(j=2;j<=i/2;i++)
 {
-if(num%i==0)
+if(i%j==0)
 {
   break;
 }
 }
-  if(i>num/2)
-printf("%d is prime",num);
+  }
+  if(j>i/2)
+printf("%d is prime",i);
 else
-printf("%d is not prime",num);
+printf("%d is not prime",i);
 return 0;
 }
 
