@@ -10,3 +10,5 @@ mul=n+n;
 printf("%d",mul);
 n++;
 }
+  return 0;
+}
